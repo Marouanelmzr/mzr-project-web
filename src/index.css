@@ -1,0 +1,337 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif, judson;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  overflow-x: hidden;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  align-items: center;
+  justify-content: space-between;
+  font size: 17 ;
+  font-weight: 500;
+  color: #FFE9CE;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #FFCC84;
+}
+
+body {
+  background-color: #EDDDCB;
+  overflow-x: hidden;
+  margin: 0;
+  display: center;
+  place-items: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.innerwidth {
+  width: 100%;
+}
+
+.flexcenter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0%;
+}
+
+
+.navbar {
+  position:fixed;
+  width: 100vw;
+  z-index: 1;
+  background-color: #191715;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 2rem;
+  max-height: 113px;
+
+
+}
+
+
+.navbar .overlap{
+position: absolute;
+max-height: 113px;
+top: 0%;
+left: 0%;
+
+}
+
+.navbar .overlap .backround {
+  position: relative;
+  max-height: 113px;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.navbar li {
+  align-items: center;
+  justify-content: left;
+  position: relative;
+}
+
+.navbar .links {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.navbar .links .fabar {
+ cursor: pointer;
+ display: none;
+ transition: all 1s;
+}
+
+.navbar .links .close {
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  transition: all 1s;
+ }
+
+
+.navbar .links .bigsize {
+  display: block;
+  position: relative;
+  z-index: 1;
+ }
+
+.Showcategories:hover .categories{
+  display: block;
+  opacity: 1;
+  visibility: visible;
+   }
+
+.categories{
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  overflow: hidden;
+  display: block;
+  visibility: hidden;
+   }
+.categories:hover{
+  display: flex;
+   }
+
+.navbar .links ul {
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 68px;
+}
+
+.navbar .linkss ul {
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .linkss .textlistnav {
+  display: block;
+}
+
+.navbar .mzrlogo {
+position: relative;
+margin-left: 0;
+margin-right: 3%;
+  
+ }
+
+.navbar .mzr {
+position: relative;
+height: 85px;
+width: 85px;
+object-fit: cover;
+
+}
+
+.menu {
+  display: none;
+}
+
+.menu.active {
+  display: none;
+}
+
+.home {
+margin-top: 113px;
+z-index: 2;
+justify-content: center;
+background-color: #1a1a1a;
+display: flex;
+align-items: center;
+margin: 0 auto;
+gap: 2rem;
+}
+
+.home .boutton {
+  align-items: center;
+  position: absolute;
+  margin-top: 900px;
+  
+}
+
+.home .label {
+align-items: center;
+position: absolute;
+margin-top: 500px;
+width: 581px ;
+height: 117px ;
+
+}
+
+.allproducts {
+  margin-top: 113px;
+  z-index: 3;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 2rem;
+  
+  }
+
+ .allproducts .Searchbar {
+  display: flex;
+  margin-left: 15rem;
+
+}
+
+.allproducts .Products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15rem;
+
+}
+
+.icons {
+  width: 20px;
+  position: relative;
+  
+  }
+
+h1 {
+  color: #FFE9CE;
+  font-family: judson;
+  font-size: 25; 
+  font-weight: 400;
+  word-wrap: break-word;
+  line-height: normal;
+}
+
+.button {
+  align-items: center;
+  width: 150px;
+  color : #26201A;
+  border-radius: 25px;
+  border: 1px solid transparent;
+  padding: 15px;
+  font-size: 19px;
+  font-weight: 500;
+  font-family: "Inter-SemiBold", Helvetica ;
+  background-color: #ffcc84;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.button:hover {
+background-color: #FFC573;
+}
+.button:focus,
+.button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (min-width : 1280px) {
+  .innerwidth {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+@media (max-width : 979px) {
+  .navbar {
+    gap: 0px;
+  
+  }
+  .navbar .links ul {
+    gap: 30px;
+  }
+  
+  .navbar .linkss ul {
+    gap: 10px;
+  }
+  .navbar .linkss .textlistnav {
+    display: none;
+  }
+
+  .navbar .links .fabar {
+    display: block;
+    transition: all 0.5s ease-in;
+   }
+
+  .navbar .links .bigsize {
+   display: none;
+   }
+   
+   .navbar.active .fabar{
+    display: none;
+    }
+
+    .navbar.active .close{
+      display: block;
+      transition: all 0.5s ease-in;
+      }
+  
+   .navbar .mzrlogo {
+    position: relative;
+    margin-right: 0%;
+    margin-left: 0%;
+      
+     }
+  
+.menu {
+  position: fixed;
+  left: -100vw;
+  z-index: 3;
+  max-width: 100vw;
+  width: 100%;
+  height: 100%;
+  background-color: #191715;
+  display: flex;
+  margin-top: 113px;
+  justify-content: space-between;
+  gap: 2rem;
+  transition: all 0.7s;
+}
+
+.menu ul {
+  text-align: left;
+  flex-direction: column;
+  padding: 0;
+  margin: 50px;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.menu.active {
+  display: flex;
+  left: 0px;
+  transition: all 0.5s ease-in;
+}
+
+}
