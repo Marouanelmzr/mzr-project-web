@@ -2,23 +2,25 @@
   display: block;
   flex-direction: column;
   cursor: pointer;
-  padding: 1rem;
   align-items: center;
   justify-content: center;
-  max-width: fit-content;
+  flex: 1 0 500px;
+  box-sizing: border-box;
+  margin: 1rem .25em;
+  padding: 0.5rem;
   margin-bottom: 2rem;
 }
 .Card-image{
   background-color: #c7b6a4;
   border-radius: 10px;
   height: 276px;
-  width: 246px;
 }
 .Card-information{
   color: #26201A
 }
 
 .Title{
+  text-align: center;
   padding-top: 9.5px;
   padding-bottom: 2px;
   display: block;
@@ -30,10 +32,26 @@
 }
 
 .Price{
+  text-align: center;
   display: block;
   color: #26201A;
   font-size: 17px;
   font-family: "Inter-SemiBold", Helvetica ;
   font-weight: 300;
   word-wrap: break-word
+}
+
+
+@media screen and (min-width: 40em) {
+  .Card-container  {
+    flex: 0 1 50%;
+    max-width: calc(50% -  1em);
+  }
+}
+
+@media screen and (min-width: 70em) {
+  .Card-container  {
+    flex: 0 1 100%;
+    max-width: calc(25% - 1em);
+  }
 }

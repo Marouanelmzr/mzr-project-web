@@ -8,17 +8,20 @@
     flex-direction: column;
 }
 .products-items{
-    width: 69.5rem;
-    justify-content: center;
+    justify-content: left;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .Products h1 {
     color: #26201A;
-    text-align: left;
     font-family: "Inter-Bold", Helvetica ;
     font-weight: 600;
+    font-size: 19px;
     word-wrap: "break-word";
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    margin-left: 5rem;
 }

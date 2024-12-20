@@ -63,7 +63,7 @@ let products = [
     "categorie":"Tees",
     "color":"Creme",
 	"postId":4
-}
+},
 ]
 
 export default products;
