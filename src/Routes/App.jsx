@@ -4,6 +4,7 @@ import MainLayout from '../Layouts/MainLayout'
 import { Container } from 'react-bootstrap'
 import { createBrowserRouter,RouterProvider} from 'react-router-dom'
 import Home from '../pages/Home'
+import Shop from '../pages/Shop'
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "Shop",
+        element: <Shop />,
       },
 ]}
   

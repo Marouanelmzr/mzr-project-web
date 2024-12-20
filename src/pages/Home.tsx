@@ -1,5 +1,5 @@
 import React from "react";
-import Shopnow from "../Components/Bouttons/Shopnow";
+import Shopnow from "../Components/common/Bouttons/Shopnow";
 
 function Home() {
 return (
