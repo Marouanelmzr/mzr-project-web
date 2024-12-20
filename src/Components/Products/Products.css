@@ -1,0 +1,24 @@
+.Products{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 0rem;
+    width: fit-content;
+    gap: 10;
+    flex-direction: column;
+}
+.products-items{
+    width: 69.5rem;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Products h1 {
+    color: #26201A;
+    text-align: left;
+    font-family: "Inter-Bold", Helvetica ;
+    font-weight: 600;
+    word-wrap: "break-word";
+    margin-bottom: 3rem;
+}

@@ -1,0 +1,39 @@
+.Card-container {
+  display: block;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+  margin-bottom: 2rem;
+}
+.Card-image{
+  background-color: #c7b6a4;
+  border-radius: 10px;
+  height: 276px;
+  width: 246px;
+}
+.Card-information{
+  color: #26201A
+}
+
+.Title{
+  padding-top: 9.5px;
+  padding-bottom: 2px;
+  display: block;
+  color: #26201A;
+  font-size: 18px;
+  font-family: "Inter-SemiBold", Helvetica ;
+  font-weight: 500;
+  word-wrap: "break-word"
+}
+
+.Price{
+  display: block;
+  color: #26201A;
+  font-size: 17px;
+  font-family: "Inter-SemiBold", Helvetica ;
+  font-weight: 300;
+  word-wrap: break-word
+}

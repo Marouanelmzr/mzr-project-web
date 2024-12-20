@@ -197,27 +197,6 @@ height: 117px ;
 
 }
 
-.allproducts {
-  margin-top: 113px;
-  z-index: 3;
-  justify-content: center;
-  margin: 0 auto;
-  gap: 2rem;
-  
-  }
-
- .allproducts .Searchbar {
-  display: flex;
-  margin-left: 15rem;
-
-}
-
-.allproducts .Products {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 15rem;
-
-}
 
 .icons {
   width: 20px;
